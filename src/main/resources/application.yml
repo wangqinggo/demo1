@@ -1,0 +1,39 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    compatibility-verifier:
+      enabled: false
+  application:
+    name: demo
+springdoc:
+  api-docs:
+    enabled: true
+  packages-to-scan: com.honedu
+  paths-to-match: /**
+
+server:
+  tomcat:
+    mbeanregistry:
+      enabled: true
+  trace:
+    http:
+      enabled: true
+      include: request-headers, response-headers, time_taken
+  info:
+    build:
+      enabled: false
+  endpoint:
+    health:
+      show-details: always
+      probes:
+        enabled: true
+  endpoints:
+    shutdown:
+      enabled: false
+    web:
+      exposure:
+        include: '*'
+
+test:
+  url: http://www.baidu.com
