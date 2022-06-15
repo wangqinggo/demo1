@@ -23,8 +23,6 @@ allprojects {
 }
 
 dependencies {
-
-    implementation 'commons-codec:commons-codec:1.15'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.0-M3'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
